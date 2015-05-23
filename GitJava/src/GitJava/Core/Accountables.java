@@ -99,10 +99,8 @@ public class Accountables
 
     /**
      Returns an accountable with the provided description, children and bytes.
-     <p>
      The resource descriptions are constructed in this format:
      {@code description [toString()]}
-     <p>
      This is a point-in-time type safe view: consumers
      will not be able to cast or manipulate the resources in any way, provided
      that the passed in children Accountables (and all their descendants) were created
