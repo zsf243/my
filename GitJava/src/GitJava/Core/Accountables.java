@@ -71,12 +71,8 @@ public class Accountables
     }
 
     /**
-     Converts a map of resources to a collection.
-     <p>
-     The resource descriptions are constructed in this format:
-     {@code prefix 'key' [toString()]}
-     <p>
-     This is a point-in-time type safe view: consumers
+     Converts a map of resources to a collection. The resource descriptions are constructed in this format:
+     {@code prefix 'key' [toString()]} This is a point-in-time type safe view: consumers
      will not be able to cast or manipulate the resources in any way.
      */
     public static Collection<Accountable> namedAccountables(String prefix, Map<?, ? extends Accountable> in)
@@ -100,8 +96,7 @@ public class Accountables
     /**
      Returns an accountable with the provided description, children and bytes.
      The resource descriptions are constructed in this format:
-     {@code description [toString()]}
-     This is a point-in-time type safe view: consumers
+     {@code description [toString()]} This is a point-in-time type safe view: consumers
      will not be able to cast or manipulate the resources in any way, provided
      that the passed in children Accountables (and all their descendants) were created
      with one of the namedAccountable functions.
